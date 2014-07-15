@@ -1,0 +1,25 @@
+Steps for buidling a model:
+1. Understand the data :- Best way is to use graph
+2. Build the model and evaluate the model on that data :- take the randpm sample of the data and check the preformence of the model on rest of the data i.e. one as training set and one as test/validation set.Here various techniques will be used to mathematically establish a relation betweeen predictor and outcome for this training set will be used.Test will only be used when strong candidate models has been establshed.
+
+An alternative approach to check that how well the model operates is to use sampling.
+
+
+Data Splitting: How to allcoate data to certain tasks is an important aspect of modelling.
+		How training and test data sets are determined should reflect how mdoel will be applied.
+ 		Random samples are always better to take as training data sets.
+		Predictor data
+
+
+
+Free lunch theorem(Wolpert 1996)  :- Without having substantive information about modelling problem ,there is no single model that will always perform better than any other model.
+
+That's why a wide variety pf techniques are tried before focussing on a single technique.
+
+
+Aim : Generate a relaiable, trustworthy model for predicting new samples.
+
+
+To achieve this aim :- First understand the data and objective of modeling, then pre-process and split the data. Only after that we would proceed to building , evualating and selecting the model.
+ 
+
