@@ -1,5 +1,5 @@
 Steps for buidling a model:
-1. Understand the data :- Best way is to use graph
+1. Understand the data :- Best way is to make plots or graphs.
 2. Build the model and evaluate the model on that data :- take the randpm sample of the data and check the preformence of the model on rest of the data i.e. one as training set and one as test/validation set.Here various techniques will be used to mathematically establish a relation betweeen predictor and outcome for this training set will be used.Test will only be used when strong candidate models has been establshed.
 
 An alternative approach to check that how well the model operates is to use sampling.
