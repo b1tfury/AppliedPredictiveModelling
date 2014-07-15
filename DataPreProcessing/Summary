@@ -1,0 +1,58 @@
+Data pre-processing techniques generally refer to addition,deletion or transformation of training data set.
+
+Surrogate variables  :- combinations of various predictors.
+
+Why data pre-processing is needed?
+(i) The need is determined by the type of model being used.
+
+
+Here in this chapter UNSUPERIVSED data processing techniques are outlined i.e. the outcomr variable is not considered while pre-processing.
+
+FEAUTRE ENGINEERING :- How feature are encoded ,and this have a significant impact on the on the model performence.
+For example: using combinations of predictors sometime can lead to better performence than while using individual predictors.
+
+Often the most effective encoding(FEATURE ENGINNEERING) of the data is done by the better understanding of the problem rather than getting that performence using any mathematical techniques.
+
+The correct feature engineering may depend on several factors:
+(i) Some encoding may be optimal for some models but poor for others.
+(ii) The relationship between the predictor and the outcome.
+
+The answer to "which feature engineerning methods are best?"
+It depends. More specifically it depends on the model being used and the true relationship with the outcome.
+
+Now we will understand the data set which will be used in this entire chapter.
+
+***CASE STUDY: CELL SEGEMENTATION IN HIGH CONTENT SCREENING***
+
+The dataset is a collection of cells , which are stained for the proper segmentation. A total of 116 features(e.g. cell area,spot fiber count) are used for this process.
+As training set 1009 cells are used.
+
+
+*****DATA TRANSFORMATION FOR INDIVIDUAL PREDICTORS******
+
+CENTERING AND SCALING
+The most straightforeward and common data transformation is to center scale the predictor variables.
+
+To CENTER a predcitor varibale , the average predictor value is subtracted from all the values.The result of centering the predictor has mean == 0.
+TO SCALE a predictor variable , each value of the predictor variable is divided by its standard deviation.Scaling leads the values to have a common standard deviation of one.
+
+These manipulations generally leads to in better stablity of numeric calculations.
+SIDE EFFECT: The only one side effect is the loss of interpretability of individual values.
+
+
+RESOLVING SKEWNESS
+
+To remove distributonal skewness.
+An un-skewed distibution is one which is roughly symmteric also the skewness == 0.
+The right-skewed distribution has a large number of points on the left side of the distribution (smaller values) and the small number of points on the right side of the distribution(large values).
+
+RULE of THUMB: If the the ratio of the highest value to the lowest value is greater than or equal to 20 then the data has significant skewness.
+And also skewness statstics can be used as a diagonstic.
+Skewness can be calculated by using the formula mentioned on page number 31 of the book.
+Replacing the data with log,square root or inverse may help to remove the skewness.
+
+Apart from the above mentioned technique , we can use statistical methods to empiracally identify an approximate  transformation.
+Box and Cox propose a family of transformations that are indexed by a parameter called lambda.
+And the formula is mentioned on the page number 32 of the book.
+Lambda can be calculated using training data.This procedure would be applied independently on predictor data that contain values greater than zero. 
+
